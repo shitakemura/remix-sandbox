@@ -1,5 +1,6 @@
 import { Link, Outlet, useLoaderData } from "@remix-run/react";
-import { json, LoaderFunction } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
 import { getPostListings } from "~/models/post.server";
 
 type LoaderData = {
