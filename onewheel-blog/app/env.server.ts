@@ -7,7 +7,7 @@ export function getEnv() {
   };
 }
 
-export type ENV = ReturnType<typeof getEnv>;
+type ENV = ReturnType<typeof getEnv>;
 
 declare global {
   var ENV: ENV;
